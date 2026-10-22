@@ -89,11 +89,95 @@ math.gamma(x) # Return the gamma function value at x # главная идея �
 math.lgamma(x)
 math.gcd(x) # return the greatest common divisor of the integer argument x
 
+### Python OS
+os.access(path, mode) # check if the specified path has the specified access permissions
+os.chdir(path)
+os.chflags(path, flags)
+os.chmod
+os.chown(path,uid,gid) # uid - идентификатор пользователя gid - идентификатор группы 
+os.chroot(path) # change the root directory of the current process
+os.close(fd)
+os.dup(fd)
+os.fchdir(id)
+os.fstat(fd)
+os.fsync(fd)
+os.getcwd()
+os.lchmod(path,mode) # Change the permissionof a symbolic link itself
+os.lchown(path, uid,gid)
+os.link(src,dst)# create a hard link
+os.listdir(path)
+os.istat(path)
+os.openpty() # create a pseudo-terminal
+os.pathconf(path,name)
+os.pipe()
+os.readlink(path)
+os.remove(path)
+os.removedirs(path) # recursively remove directories
+os.rename(src,dst)
+os.renames(old, new)
+os.mdir(path)# remove an empty directory
+os.stat(path) # get information of the file or directory at the specified path
+os.statvis(path) # get information of the file system at the specified path
+os.symlink(src,dst) # crate a symbolic link
+os.ttyname(df) # return a string representing the name of the terminal device
+os.unllink(path) # delete a file at the specified path
+os.utime(path,times) # set the last modification and access time of specified path file
+os.pardir() # get the parent directory of the current directory
+os.replace() # Rename a file or directory
+os.startfile() # open a file or launch an application on windows
 
+### Python File
 
+file.close() 
+file.flush # flush the internal I/O buffer of a file object
+file.fileno() # returns the underlying file descriptor corresponding to the file object
+file.isarry() # check whether the file object is connected to a terminal device
+file.read([size]) # read specified number of bytes from a file
+file.readline([size]) # read a single line of data from a file
+fle.write(str)
+file.writelines(sequence) # write a sequence of strings to a file
 
+### Python Random
 
+seed() # initialize the random number generator
+getstate()# get the internal state of the random number generator
+random() # generate a random floating-point number in the range [0.0, 1.0]
+uniform() # generate a random floating-point number within a given range
+betavariate() # generate a random number from the beta distribution # бета-распределение - это семейство непрерывных распределений вероятностей. ограниченных интервалом от 0 до 1. Бета-распределение идеально подходит для моедлирования процентов, долей или вероятностей чего-либо, например какова реальная конверсия сайта? с помощью параметров alpha (успехи = 10) и beta (неудачи = 5) бета-распределение покажет вам наиболее вероятный диапазон вашей конверсии
+random.betavariate(alpha, beta)
+expovariate() # generate a random number from the exponential distribution
+gammavariate() # generate a randomnumber from the gamma distribution
+gauss()# generate a random number from the normal (Gaussian) distribution
+lognormvariate()  # Generate a random number from the log-normal distribution
+paretovariate() # Generate a random number from the Pareto distribution
+weibuillivariate() # Generate a random number from the Weibull distribution
 
+### Python Data Type Conversion
 
+int()
+float()
+str()
+bool()
+list()
+tuple()
+set()
+dict()
+complex()
+bytes()
+chr() # covert a value to a character
 
+### Python List
 
+len(list) # return the number of elements in the list
+max(list)
+min(lint)
+list(seg) # convert a tuple to a list
+list.append(obj) # append a new object to the end of the list
+list.count(obj) # count the number of times an element appears in the list
+list.index(obj) # find the index position of the first math for a value from the list 
+list.insert(index, obj) # insert the object into the list
+list.pop([index=-1]) # Remove an element from the list (the last element by default)
+list.remove(obj) # Remove the first match for a value in the list 
+list.reverse() # Reverse the order of elements in the list
+list.clear() # Clear the list
+list.copy # Copy the list
