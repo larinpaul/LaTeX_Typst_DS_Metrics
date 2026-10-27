@@ -14,3 +14,7 @@ CREATE TABLE articles (
 -- Это алгоритм приближенного поиска ближайших соседей (ANN) в многомерных векторных пространствах.
 -- (Optional) Create an HNSW index for ulta-fast Approximate Nearest Neigbor (ANN) search
 CREATE INDEX ON articles USING hnsw (embedding vector_cosine_ops);
+
+/*
+pip install psycopg[binary] pgvector openai
+*/
